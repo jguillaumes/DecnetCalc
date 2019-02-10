@@ -1,0 +1,578 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5F68C9982210D67A00B069E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F68C9972210D67A00B069E4 /* AppDelegate.swift */; };
+		5F68C99A2210D67D00B069E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F68C9992210D67D00B069E4 /* Assets.xcassets */; };
+		5F68C99D2210D67D00B069E4 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F68C99B2210D67D00B069E4 /* MainMenu.xib */; };
+		5F68C9A92210D67E00B069E4 /* DecnetCalcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F68C9A82210D67E00B069E4 /* DecnetCalcTests.swift */; };
+		5F68C9B42210D67E00B069E4 /* DecnetCalcUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F68C9B32210D67E00B069E4 /* DecnetCalcUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5F68C9A52210D67E00B069E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F68C98C2210D67A00B069E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F68C9932210D67A00B069E4;
+			remoteInfo = DecnetCalc;
+		};
+		5F68C9B02210D67E00B069E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F68C98C2210D67A00B069E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F68C9932210D67A00B069E4;
+			remoteInfo = DecnetCalc;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5F68C9942210D67A00B069E4 /* DecnetCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DecnetCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F68C9972210D67A00B069E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5F68C9992210D67D00B069E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5F68C99C2210D67D00B069E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		5F68C99E2210D67D00B069E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F68C99F2210D67D00B069E4 /* DecnetCalc.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DecnetCalc.entitlements; sourceTree = "<group>"; };
+		5F68C9A42210D67E00B069E4 /* DecnetCalcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DecnetCalcTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F68C9A82210D67E00B069E4 /* DecnetCalcTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecnetCalcTests.swift; sourceTree = "<group>"; };
+		5F68C9AA2210D67E00B069E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F68C9AF2210D67E00B069E4 /* DecnetCalcUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DecnetCalcUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F68C9B32210D67E00B069E4 /* DecnetCalcUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecnetCalcUITests.swift; sourceTree = "<group>"; };
+		5F68C9B52210D67E00B069E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5F68C9912210D67A00B069E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F68C9A12210D67E00B069E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F68C9AC2210D67E00B069E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5F68C98B2210D67A00B069E4 = {
+			isa = PBXGroup;
+			children = (
+				5F68C9962210D67A00B069E4 /* DecnetCalc */,
+				5F68C9A72210D67E00B069E4 /* DecnetCalcTests */,
+				5F68C9B22210D67E00B069E4 /* DecnetCalcUITests */,
+				5F68C9952210D67A00B069E4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5F68C9952210D67A00B069E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5F68C9942210D67A00B069E4 /* DecnetCalc.app */,
+				5F68C9A42210D67E00B069E4 /* DecnetCalcTests.xctest */,
+				5F68C9AF2210D67E00B069E4 /* DecnetCalcUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5F68C9962210D67A00B069E4 /* DecnetCalc */ = {
+			isa = PBXGroup;
+			children = (
+				5F68C9972210D67A00B069E4 /* AppDelegate.swift */,
+				5F68C9992210D67D00B069E4 /* Assets.xcassets */,
+				5F68C99B2210D67D00B069E4 /* MainMenu.xib */,
+				5F68C99E2210D67D00B069E4 /* Info.plist */,
+				5F68C99F2210D67D00B069E4 /* DecnetCalc.entitlements */,
+			);
+			path = DecnetCalc;
+			sourceTree = "<group>";
+		};
+		5F68C9A72210D67E00B069E4 /* DecnetCalcTests */ = {
+			isa = PBXGroup;
+			children = (
+				5F68C9A82210D67E00B069E4 /* DecnetCalcTests.swift */,
+				5F68C9AA2210D67E00B069E4 /* Info.plist */,
+			);
+			path = DecnetCalcTests;
+			sourceTree = "<group>";
+		};
+		5F68C9B22210D67E00B069E4 /* DecnetCalcUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5F68C9B32210D67E00B069E4 /* DecnetCalcUITests.swift */,
+				5F68C9B52210D67E00B069E4 /* Info.plist */,
+			);
+			path = DecnetCalcUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5F68C9932210D67A00B069E4 /* DecnetCalc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F68C9B82210D67E00B069E4 /* Build configuration list for PBXNativeTarget "DecnetCalc" */;
+			buildPhases = (
+				5F68C9902210D67A00B069E4 /* Sources */,
+				5F68C9912210D67A00B069E4 /* Frameworks */,
+				5F68C9922210D67A00B069E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DecnetCalc;
+			productName = DecnetCalc;
+			productReference = 5F68C9942210D67A00B069E4 /* DecnetCalc.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5F68C9A32210D67E00B069E4 /* DecnetCalcTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F68C9BB2210D67E00B069E4 /* Build configuration list for PBXNativeTarget "DecnetCalcTests" */;
+			buildPhases = (
+				5F68C9A02210D67E00B069E4 /* Sources */,
+				5F68C9A12210D67E00B069E4 /* Frameworks */,
+				5F68C9A22210D67E00B069E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F68C9A62210D67E00B069E4 /* PBXTargetDependency */,
+			);
+			name = DecnetCalcTests;
+			productName = DecnetCalcTests;
+			productReference = 5F68C9A42210D67E00B069E4 /* DecnetCalcTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5F68C9AE2210D67E00B069E4 /* DecnetCalcUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F68C9BE2210D67E00B069E4 /* Build configuration list for PBXNativeTarget "DecnetCalcUITests" */;
+			buildPhases = (
+				5F68C9AB2210D67E00B069E4 /* Sources */,
+				5F68C9AC2210D67E00B069E4 /* Frameworks */,
+				5F68C9AD2210D67E00B069E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F68C9B12210D67E00B069E4 /* PBXTargetDependency */,
+			);
+			name = DecnetCalcUITests;
+			productName = DecnetCalcUITests;
+			productReference = 5F68C9AF2210D67E00B069E4 /* DecnetCalcUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5F68C98C2210D67A00B069E4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Jordi Guillaumes Pons";
+				TargetAttributes = {
+					5F68C9932210D67A00B069E4 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					5F68C9A32210D67E00B069E4 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 5F68C9932210D67A00B069E4;
+					};
+					5F68C9AE2210D67E00B069E4 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 5F68C9932210D67A00B069E4;
+					};
+				};
+			};
+			buildConfigurationList = 5F68C98F2210D67A00B069E4 /* Build configuration list for PBXProject "DecnetCalc" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5F68C98B2210D67A00B069E4;
+			productRefGroup = 5F68C9952210D67A00B069E4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5F68C9932210D67A00B069E4 /* DecnetCalc */,
+				5F68C9A32210D67E00B069E4 /* DecnetCalcTests */,
+				5F68C9AE2210D67E00B069E4 /* DecnetCalcUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5F68C9922210D67A00B069E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F68C99A2210D67D00B069E4 /* Assets.xcassets in Resources */,
+				5F68C99D2210D67D00B069E4 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F68C9A22210D67E00B069E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F68C9AD2210D67E00B069E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5F68C9902210D67A00B069E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F68C9982210D67A00B069E4 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F68C9A02210D67E00B069E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F68C9A92210D67E00B069E4 /* DecnetCalcTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F68C9AB2210D67E00B069E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F68C9B42210D67E00B069E4 /* DecnetCalcUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5F68C9A62210D67E00B069E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F68C9932210D67A00B069E4 /* DecnetCalc */;
+			targetProxy = 5F68C9A52210D67E00B069E4 /* PBXContainerItemProxy */;
+		};
+		5F68C9B12210D67E00B069E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F68C9932210D67A00B069E4 /* DecnetCalc */;
+			targetProxy = 5F68C9B02210D67E00B069E4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5F68C99B2210D67D00B069E4 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F68C99C2210D67D00B069E4 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5F68C9B62210D67E00B069E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5F68C9B72210D67E00B069E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		5F68C9B92210D67E00B069E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DecnetCalc/DecnetCalc.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 67BFW68X76;
+				INFOPLIST_FILE = DecnetCalc/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = name.guillaumes.jordi.DecnetCalc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		5F68C9BA2210D67E00B069E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DecnetCalc/DecnetCalc.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 67BFW68X76;
+				INFOPLIST_FILE = DecnetCalc/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = name.guillaumes.jordi.DecnetCalc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		5F68C9BC2210D67E00B069E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 67BFW68X76;
+				INFOPLIST_FILE = DecnetCalcTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = name.guillaumes.jordi.DecnetCalcTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DecnetCalc.app/Contents/MacOS/DecnetCalc";
+			};
+			name = Debug;
+		};
+		5F68C9BD2210D67E00B069E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 67BFW68X76;
+				INFOPLIST_FILE = DecnetCalcTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = name.guillaumes.jordi.DecnetCalcTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DecnetCalc.app/Contents/MacOS/DecnetCalc";
+			};
+			name = Release;
+		};
+		5F68C9BF2210D67E00B069E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 67BFW68X76;
+				INFOPLIST_FILE = DecnetCalcUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = name.guillaumes.jordi.DecnetCalcUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_TARGET_NAME = DecnetCalc;
+			};
+			name = Debug;
+		};
+		5F68C9C02210D67E00B069E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 67BFW68X76;
+				INFOPLIST_FILE = DecnetCalcUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = name.guillaumes.jordi.DecnetCalcUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_TARGET_NAME = DecnetCalc;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5F68C98F2210D67A00B069E4 /* Build configuration list for PBXProject "DecnetCalc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F68C9B62210D67E00B069E4 /* Debug */,
+				5F68C9B72210D67E00B069E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F68C9B82210D67E00B069E4 /* Build configuration list for PBXNativeTarget "DecnetCalc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F68C9B92210D67E00B069E4 /* Debug */,
+				5F68C9BA2210D67E00B069E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F68C9BB2210D67E00B069E4 /* Build configuration list for PBXNativeTarget "DecnetCalcTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F68C9BC2210D67E00B069E4 /* Debug */,
+				5F68C9BD2210D67E00B069E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F68C9BE2210D67E00B069E4 /* Build configuration list for PBXNativeTarget "DecnetCalcUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F68C9BF2210D67E00B069E4 /* Debug */,
+				5F68C9C02210D67E00B069E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5F68C98C2210D67A00B069E4 /* Project object */;
+}
