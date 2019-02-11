@@ -15,6 +15,7 @@
 		5F68C9C522120D5C00B069E4 /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F68C9C322120D5C00B069E4 /* WindowController.swift */; };
 		5F68C9C622120D5C00B069E4 /* WindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F68C9C422120D5C00B069E4 /* WindowController.xib */; };
 		5F68C9C822121C0A00B069E4 /* DECNET.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F68C9C722121C0A00B069E4 /* DECNET.png */; };
+		5F68C9CB2212298800B069E4 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 5F68C9CA2212298800B069E4 /* LICENSE */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,8 @@
 		5F68C9C322120D5C00B069E4 /* WindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
 		5F68C9C422120D5C00B069E4 /* WindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WindowController.xib; sourceTree = "<group>"; };
 		5F68C9C722121C0A00B069E4 /* DECNET.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DECNET.png; sourceTree = "<group>"; };
+		5F68C9C92212292100B069E4 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		5F68C9CA2212298800B069E4 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +83,8 @@
 		5F68C98B2210D67A00B069E4 = {
 			isa = PBXGroup;
 			children = (
+				5F68C9CA2212298800B069E4 /* LICENSE */,
+				5F68C9C92212292100B069E4 /* README.md */,
 				5F68C9962210D67A00B069E4 /* DecnetCalc */,
 				5F68C9A72210D67E00B069E4 /* DecnetCalcTests */,
 				5F68C9B22210D67E00B069E4 /* DecnetCalcUITests */,
@@ -238,6 +243,7 @@
 				5F68C99A2210D67D00B069E4 /* Assets.xcassets in Resources */,
 				5F68C9C622120D5C00B069E4 /* WindowController.xib in Resources */,
 				5F68C99D2210D67D00B069E4 /* MainMenu.xib in Resources */,
+				5F68C9CB2212298800B069E4 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
