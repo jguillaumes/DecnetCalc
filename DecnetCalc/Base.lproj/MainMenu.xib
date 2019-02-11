@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
-        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -12,15 +11,8 @@
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
-        <customObject id="-3" userLabel="Application"/>
-        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="DecnetCalc" customModuleProvider="target">
-            <connections>
-                <outlet property="dnArea" destination="0pU-4O-DTd" id="tFW-wm-jlQ"/>
-                <outlet property="dnNode" destination="fLz-O4-jTZ" id="mve-3F-EF6"/>
-                <outlet property="macAddress" destination="FZP-E9-cOB" id="8fe-xP-nu6"/>
-                <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
-            </connections>
-        </customObject>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="DecnetCalc" customModuleProvider="target"/>
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
         <menu title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
             <items>
@@ -82,102 +74,8 @@
                     </menu>
                 </menuItem>
             </items>
-            <point key="canvasLocation" x="83" y="2"/>
+            <point key="canvasLocation" x="2" y="-120"/>
         </menu>
-        <window title="DecnetCalc" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
-            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
-            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="335" y="390" width="322" height="91"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
-            <value key="minSize" type="size" width="322" height="91"/>
-            <value key="maxSize" type="size" width="322" height="91"/>
-            <view key="contentView" wantsLayer="YES" id="EiT-Mj-1SZ">
-                <rect key="frame" x="0.0" y="0.0" width="322" height="91"/>
-                <autoresizingMask key="autoresizingMask"/>
-                <subviews>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="P4W-wj-Wbx">
-                        <rect key="frame" x="34" y="54" width="113" height="17"/>
-                        <textFieldCell key="cell" lineBreakMode="clipping" title="DECNET Address:" id="JXO-c7-0xJ">
-                            <font key="font" usesAppearanceFont="YES"/>
-                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
-                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="0pU-4O-DTd">
-                        <rect key="frame" x="153" y="49" width="31" height="22"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="31" id="fkT-tT-kWS"/>
-                        </constraints>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" title="7" drawsBackground="YES" id="z0i-pt-3uv">
-                            <numberFormatter key="formatter" formatterBehavior="default10_4" numberStyle="decimal" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" maximumFractionDigits="3" id="rsV-qg-4Lk"/>
-                            <font key="font" metaFont="system"/>
-                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                        <connections>
-                            <action selector="computeMac:" target="Voe-Tx-rLC" id="GYI-EW-BCR"/>
-                        </connections>
-                    </textField>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="897-7t-9dV">
-                        <rect key="frame" x="192" y="54" width="8" height="17"/>
-                        <textFieldCell key="cell" lineBreakMode="clipping" title="." id="6E8-kw-sDJ">
-                            <font key="font" metaFont="system"/>
-                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
-                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="fLz-O4-jTZ">
-                        <rect key="frame" x="206" y="49" width="39" height="22"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="39" id="OZv-rA-FIq"/>
-                        </constraints>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" title="61" drawsBackground="YES" id="5mZ-J4-JbO">
-                            <numberFormatter key="formatter" formatterBehavior="default10_4" numberStyle="decimal" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" maximumFractionDigits="3" id="bAs-XO-6QC"/>
-                            <font key="font" metaFont="system"/>
-                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                        <connections>
-                            <action selector="computeMac:" target="Voe-Tx-rLC" id="O0D-RT-Aj1"/>
-                        </connections>
-                    </textField>
-                    <textField verticalHuggingPriority="750" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FZP-E9-cOB">
-                        <rect key="frame" x="151" y="24" width="141" height="22"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="141" id="Umo-VY-kwA"/>
-                        </constraints>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="4Fh-Vs-dE1">
-                            <font key="font" metaFont="system"/>
-                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="9ua-Lt-otX">
-                        <rect key="frame" x="34" y="24" width="90" height="17"/>
-                        <textFieldCell key="cell" lineBreakMode="clipping" title="MAC Address:" id="X7k-mQ-iVm">
-                            <font key="font" metaFont="system"/>
-                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
-                </subviews>
-                <constraints>
-                    <constraint firstItem="0pU-4O-DTd" firstAttribute="leading" secondItem="P4W-wj-Wbx" secondAttribute="trailing" constant="8" symbolic="YES" id="3iJ-du-ux5"/>
-                    <constraint firstItem="9ua-Lt-otX" firstAttribute="bottom" secondItem="FZP-E9-cOB" secondAttribute="bottom" id="5qj-BQ-cln"/>
-                    <constraint firstItem="fLz-O4-jTZ" firstAttribute="leading" secondItem="897-7t-9dV" secondAttribute="trailing" constant="8" symbolic="YES" id="JYD-V8-Xan"/>
-                    <constraint firstItem="P4W-wj-Wbx" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="20" symbolic="YES" id="Rfu-pB-4a5"/>
-                    <constraint firstItem="P4W-wj-Wbx" firstAttribute="leading" secondItem="9ua-Lt-otX" secondAttribute="leading" id="XVd-Tf-AhT"/>
-                    <constraint firstItem="P4W-wj-Wbx" firstAttribute="baseline" secondItem="897-7t-9dV" secondAttribute="baseline" id="ZGZ-5E-50b"/>
-                    <constraint firstItem="FZP-E9-cOB" firstAttribute="leading" secondItem="9ua-Lt-otX" secondAttribute="trailing" constant="29" id="fY3-wx-mmr"/>
-                    <constraint firstItem="0pU-4O-DTd" firstAttribute="baseline" secondItem="fLz-O4-jTZ" secondAttribute="baseline" id="ibb-WL-afl"/>
-                    <constraint firstItem="0pU-4O-DTd" firstAttribute="top" secondItem="897-7t-9dV" secondAttribute="top" id="ijV-pe-Nza"/>
-                    <constraint firstItem="FZP-E9-cOB" firstAttribute="top" secondItem="897-7t-9dV" secondAttribute="bottom" constant="8" symbolic="YES" id="lSG-rG-zjH"/>
-                    <constraint firstItem="P4W-wj-Wbx" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="36" id="oez-3W-ZXO"/>
-                    <constraint firstItem="897-7t-9dV" firstAttribute="leading" secondItem="0pU-4O-DTd" secondAttribute="trailing" constant="10" id="xTu-uG-iba"/>
-                </constraints>
-            </view>
-            <point key="canvasLocation" x="165" y="135"/>
-        </window>
         <userDefaultsController representsSharedInstance="YES" id="yvv-Ff-xBY"/>
     </objects>
 </document>

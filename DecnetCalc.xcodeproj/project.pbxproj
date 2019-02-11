@@ -12,6 +12,9 @@
 		5F68C99D2210D67D00B069E4 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F68C99B2210D67D00B069E4 /* MainMenu.xib */; };
 		5F68C9A92210D67E00B069E4 /* DecnetCalcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F68C9A82210D67E00B069E4 /* DecnetCalcTests.swift */; };
 		5F68C9B42210D67E00B069E4 /* DecnetCalcUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F68C9B32210D67E00B069E4 /* DecnetCalcUITests.swift */; };
+		5F68C9C522120D5C00B069E4 /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F68C9C322120D5C00B069E4 /* WindowController.swift */; };
+		5F68C9C622120D5C00B069E4 /* WindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F68C9C422120D5C00B069E4 /* WindowController.xib */; };
+		5F68C9C822121C0A00B069E4 /* DECNET.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F68C9C722121C0A00B069E4 /* DECNET.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		5F68C9AF2210D67E00B069E4 /* DecnetCalcUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DecnetCalcUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F68C9B32210D67E00B069E4 /* DecnetCalcUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecnetCalcUITests.swift; sourceTree = "<group>"; };
 		5F68C9B52210D67E00B069E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F68C9C322120D5C00B069E4 /* WindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
+		5F68C9C422120D5C00B069E4 /* WindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WindowController.xib; sourceTree = "<group>"; };
+		5F68C9C722121C0A00B069E4 /* DECNET.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DECNET.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +103,11 @@
 				5F68C9972210D67A00B069E4 /* AppDelegate.swift */,
 				5F68C9992210D67D00B069E4 /* Assets.xcassets */,
 				5F68C99B2210D67D00B069E4 /* MainMenu.xib */,
+				5F68C9C722121C0A00B069E4 /* DECNET.png */,
 				5F68C99E2210D67D00B069E4 /* Info.plist */,
 				5F68C99F2210D67D00B069E4 /* DecnetCalc.entitlements */,
+				5F68C9C322120D5C00B069E4 /* WindowController.swift */,
+				5F68C9C422120D5C00B069E4 /* WindowController.xib */,
 			);
 			path = DecnetCalc;
 			sourceTree = "<group>";
@@ -225,7 +234,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F68C9C822121C0A00B069E4 /* DECNET.png in Resources */,
 				5F68C99A2210D67D00B069E4 /* Assets.xcassets in Resources */,
+				5F68C9C622120D5C00B069E4 /* WindowController.xib in Resources */,
 				5F68C99D2210D67D00B069E4 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F68C9982210D67A00B069E4 /* AppDelegate.swift in Sources */,
+				5F68C9C522120D5C00B069E4 /* WindowController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,7 +361,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -404,9 +416,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";

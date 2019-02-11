@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="WindowController" customModule="DecnetCalc" customModuleProvider="target">
+            <connections>
+                <outlet property="dnArea" destination="6Fa-LV-xyt" id="Hbc-fb-c61"/>
+                <outlet property="dnNode" destination="qYt-Az-cJF" id="yiR-65-O1F"/>
+                <outlet property="macAddress" destination="K68-zn-EDp" id="KR7-Si-0GZ"/>
+                <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="DECNET Calculator" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="F0z-JX-Cv5">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="240" width="312" height="129"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1050"/>
+            <view key="contentView" wantsLayer="YES" id="se5-gp-TjO">
+                <rect key="frame" x="0.0" y="0.0" width="312" height="129"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="mI3-Sc-c9Z">
+                        <rect key="frame" x="18" y="92" width="113" height="17"/>
+                        <textFieldCell key="cell" lineBreakMode="clipping" title="DECNET Address:" id="cKe-ej-84M">
+                            <font key="font" usesAppearanceFont="YES"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="c9j-ox-EiZ">
+                        <rect key="frame" x="18" y="52" width="90" height="17"/>
+                        <textFieldCell key="cell" lineBreakMode="clipping" title="MAC Address:" id="9jP-zJ-QQh">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="6Fa-LV-xyt">
+                        <rect key="frame" x="137" y="92" width="25" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="nBE-KK-XwT"/>
+                        </constraints>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="loB-HG-aOG">
+                            <numberFormatter key="formatter" formatterBehavior="default10_4" numberStyle="decimal" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" maximumFractionDigits="3" id="A7g-gP-vxv"/>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <action selector="handleArea:" target="-2" id="LlC-XZ-VIP"/>
+                        </connections>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="RnN-pL-OuU">
+                        <rect key="frame" x="168" y="92" width="14" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="10" id="Quq-Vi-eoV"/>
+                        </constraints>
+                        <textFieldCell key="cell" lineBreakMode="clipping" title="." id="RWw-cI-MM5">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="qYt-Az-cJF">
+                        <rect key="frame" x="182" y="92" width="38" height="22"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="1zy-OG-1SE">
+                            <numberFormatter key="formatter" formatterBehavior="default10_4" numberStyle="decimal" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" maximumFractionDigits="3" id="XAi-bf-qjR"/>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <action selector="handleNode:" target="-2" id="wss-av-ux2"/>
+                        </connections>
+                    </textField>
+                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="K68-zn-EDp">
+                        <rect key="frame" x="137" y="52" width="146" height="22"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="QeU-XV-LxH">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="6Fa-LV-xyt" firstAttribute="leading" secondItem="K68-zn-EDp" secondAttribute="leading" id="3V6-pi-8Un"/>
+                    <constraint firstItem="6Fa-LV-xyt" firstAttribute="baseline" secondItem="qYt-Az-cJF" secondAttribute="baseline" id="5PM-RI-PnT"/>
+                    <constraint firstItem="K68-zn-EDp" firstAttribute="top" secondItem="6Fa-LV-xyt" secondAttribute="bottom" constant="18" id="ARz-eN-zbj"/>
+                    <constraint firstItem="RnN-pL-OuU" firstAttribute="leading" secondItem="6Fa-LV-xyt" secondAttribute="trailing" constant="8" symbolic="YES" id="BVi-aX-bAJ"/>
+                    <constraint firstItem="mI3-Sc-c9Z" firstAttribute="leading" secondItem="c9j-ox-EiZ" secondAttribute="leading" id="DGp-7T-Epm"/>
+                    <constraint firstAttribute="trailing" secondItem="K68-zn-EDp" secondAttribute="trailing" constant="29" id="EQz-vk-bAa"/>
+                    <constraint firstItem="mI3-Sc-c9Z" firstAttribute="baseline" secondItem="RnN-pL-OuU" secondAttribute="baseline" id="Jmx-sd-4VP"/>
+                    <constraint firstItem="mI3-Sc-c9Z" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" constant="20" symbolic="YES" id="QQB-tE-C0d"/>
+                    <constraint firstAttribute="trailing" secondItem="qYt-Az-cJF" secondAttribute="trailing" constant="92" id="cfH-nA-FtN"/>
+                    <constraint firstItem="qYt-Az-cJF" firstAttribute="leading" secondItem="RnN-pL-OuU" secondAttribute="trailing" constant="2" id="eIT-wt-2GD"/>
+                    <constraint firstItem="c9j-ox-EiZ" firstAttribute="bottom" secondItem="K68-zn-EDp" secondAttribute="bottom" id="nF5-r3-Tx5"/>
+                    <constraint firstItem="6Fa-LV-xyt" firstAttribute="bottom" secondItem="RnN-pL-OuU" secondAttribute="bottom" id="qVU-zm-Dh3"/>
+                    <constraint firstItem="mI3-Sc-c9Z" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" constant="20" symbolic="YES" id="yKl-oh-m6f"/>
+                    <constraint firstItem="6Fa-LV-xyt" firstAttribute="leading" secondItem="mI3-Sc-c9Z" secondAttribute="trailing" constant="8" symbolic="YES" id="z89-nA-y2G"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
+            </connections>
+            <point key="canvasLocation" x="249" y="49.5"/>
+        </window>
+    </objects>
+</document>
