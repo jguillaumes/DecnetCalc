@@ -8,6 +8,7 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="WindowController" customModule="DecnetCalc" customModuleProvider="target">
             <connections>
+                <outlet property="cbSeparator" destination="V3z-rn-5aK" id="4Jn-14-zsq"/>
                 <outlet property="dnArea" destination="6Fa-LV-xyt" id="Hbc-fb-c61"/>
                 <outlet property="dnNode" destination="qYt-Az-cJF" id="yiR-65-O1F"/>
                 <outlet property="macAddress" destination="K68-zn-EDp" id="KR7-Si-0GZ"/>
@@ -19,8 +20,8 @@
         <window title="DECNET Calculator" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="F0z-JX-Cv5">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="196" y="240" width="312" height="129"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1050"/>
+            <rect key="contentRect" x="573" y="582" width="312" height="129"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
             <view key="contentView" wantsLayer="YES" id="se5-gp-TjO">
                 <rect key="frame" x="0.0" y="0.0" width="312" height="129"/>
                 <autoresizingMask key="autoresizingMask"/>
@@ -41,13 +42,16 @@
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="6Fa-LV-xyt">
+                    <textField toolTip="DECNET Area (1 to 63)" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="6Fa-LV-xyt">
                         <rect key="frame" x="137" y="92" width="25" height="22"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="25" id="nBE-KK-XwT"/>
                         </constraints>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="loB-HG-aOG">
-                            <numberFormatter key="formatter" formatterBehavior="default10_4" numberStyle="decimal" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" maximumFractionDigits="3" id="A7g-gP-vxv"/>
+                            <numberFormatter key="formatter" formatterBehavior="default10_4" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" maximumFractionDigits="3" id="A7g-gP-vxv">
+                                <real key="minimum" value="1"/>
+                                <real key="maximum" value="63"/>
+                            </numberFormatter>
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -67,10 +71,13 @@
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="qYt-Az-cJF">
+                    <textField toolTip="DECNET Node (1 to 1023)" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="qYt-Az-cJF">
                         <rect key="frame" x="182" y="92" width="38" height="22"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="1zy-OG-1SE">
-                            <numberFormatter key="formatter" formatterBehavior="default10_4" numberStyle="decimal" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" maximumFractionDigits="3" id="XAi-bf-qjR"/>
+                            <numberFormatter key="formatter" formatterBehavior="default10_4" localizesFormat="NO" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" maximumFractionDigits="3" id="XAi-bf-qjR">
+                                <real key="minimum" value="1"/>
+                                <real key="maximum" value="1023"/>
+                            </numberFormatter>
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -87,15 +94,31 @@
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
+                    <button toolTip="Check to use colons (:) to separate the bytes in the MAC Address" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="V3z-rn-5aK">
+                        <rect key="frame" x="135" y="18" width="115" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="Xrt-lv-Vka"/>
+                            <constraint firstAttribute="width" constant="111" id="ivJ-KT-IEO"/>
+                        </constraints>
+                        <buttonCell key="cell" type="check" title="Use : separator" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="l1a-dR-wRH">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="handleCbSeparator:" target="-2" id="Ijt-G0-Osg"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <constraints>
                     <constraint firstItem="6Fa-LV-xyt" firstAttribute="leading" secondItem="K68-zn-EDp" secondAttribute="leading" id="3V6-pi-8Un"/>
                     <constraint firstItem="6Fa-LV-xyt" firstAttribute="baseline" secondItem="qYt-Az-cJF" secondAttribute="baseline" id="5PM-RI-PnT"/>
+                    <constraint firstItem="V3z-rn-5aK" firstAttribute="leading" secondItem="K68-zn-EDp" secondAttribute="leading" id="5mg-T2-tXE"/>
                     <constraint firstItem="K68-zn-EDp" firstAttribute="top" secondItem="6Fa-LV-xyt" secondAttribute="bottom" constant="18" id="ARz-eN-zbj"/>
                     <constraint firstItem="RnN-pL-OuU" firstAttribute="leading" secondItem="6Fa-LV-xyt" secondAttribute="trailing" constant="8" symbolic="YES" id="BVi-aX-bAJ"/>
                     <constraint firstItem="mI3-Sc-c9Z" firstAttribute="leading" secondItem="c9j-ox-EiZ" secondAttribute="leading" id="DGp-7T-Epm"/>
                     <constraint firstAttribute="trailing" secondItem="K68-zn-EDp" secondAttribute="trailing" constant="29" id="EQz-vk-bAa"/>
                     <constraint firstItem="mI3-Sc-c9Z" firstAttribute="baseline" secondItem="RnN-pL-OuU" secondAttribute="baseline" id="Jmx-sd-4VP"/>
+                    <constraint firstItem="V3z-rn-5aK" firstAttribute="top" secondItem="K68-zn-EDp" secondAttribute="bottom" constant="18" id="PHh-YC-hgE"/>
                     <constraint firstItem="mI3-Sc-c9Z" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" constant="20" symbolic="YES" id="QQB-tE-C0d"/>
                     <constraint firstAttribute="trailing" secondItem="qYt-Az-cJF" secondAttribute="trailing" constant="92" id="cfH-nA-FtN"/>
                     <constraint firstItem="qYt-Az-cJF" firstAttribute="leading" secondItem="RnN-pL-OuU" secondAttribute="trailing" constant="2" id="eIT-wt-2GD"/>
